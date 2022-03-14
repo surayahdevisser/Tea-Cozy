@@ -1,0 +1,282 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica;
+	font-size: 22px;
+	color: SeaShell;
+	background-color: black;
+}
+
+a, a:visited, a:active, a:any-link, a:hover {
+	color: seashell;
+	text-decoration: none;
+}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+h1 {
+	font-size: 2.5em;
+}
+
+h2 {
+	font-weight: normal;
+	font-size: 1.3em;
+}
+
+/* ------ Header -------*/
+header {
+	z-index: 1;
+	width: 100%;
+	height: 70px;
+	position: fixed;
+	top: 0;
+	background-color: black;
+}
+
+.logo-container {
+	display: inline-block;
+	margin: 10px 0 0 10px;
+}
+
+.logo {
+	height: 50px;
+	width: auto;
+}
+
+nav {
+	display: inline-block;
+	float: right;
+	background-color: black;
+}
+
+	nav li {
+		display: inline;
+		list-style-type: none;
+		margin-right: 15px;
+	}
+
+		nav li a {
+			color: SeaShell;
+		}
+
+#menu-icon {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 70px;
+	height: 70px;
+	cursor: pointer;
+	background-image: url('menu_icon_white.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+/* ------- Banner ------- */
+#mission {
+	position: relative;
+	display: block;
+	width: 1200px;
+	height: 800px;
+	padding: 0;
+	margin: 70px auto 50px auto;
+	background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+	#mission h1 {
+		margin: 0.5em 0;
+	}
+
+	#mission h2 {
+		margin: 0;
+	}
+
+.textbox-banner {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	background-color: black;
+	display: inline-block;
+	padding: 0 20px;
+	opacity: 0.8;
+}
+
+
+/* ----- Health Benefits section ----- */
+#health-benefits {
+	margin: 80px 0 0 0;
+}
+
+.textbox-health-benefits {
+	text-align: center;
+	width: 100%;
+	padding: 0 40px;
+}
+
+h3#inspirational-quote {
+	margin-top: 60px;
+	color: seashell;
+	font-style: italic;
+}
+
+#quote-button {
+	cursor: pointer;
+	margin-top: 20px;
+	border: 1px solid seashell;
+	padding: 10px 20px;
+	background-color: seashell;
+	transition: all 500ms ease-in;
+	font-size: 16px;
+}
+
+	#quote-button:hover {
+		color: seashell;
+		background-color: black;
+	}
+
+
+/* ----- Tea's of the Month ----- */
+.textbox {
+	text-align: center;
+	width: 100%;
+	margin-top: 80px;
+	border-top: 1px solid white;
+	padding-top: 80px;
+}
+
+.Picturebook {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+	.Picturebook figure {
+		width: 300px;
+	}
+
+		.Picturebook figure img {
+			width: 300px;
+			height: auto;
+			opacity: 0.9;
+		}
+
+		.Picturebook figure figcaption {
+			margin-top: 10px;
+			text-align: center;
+		}
+
+
+/* ----- Locations ----- */
+#locations {
+	background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg");
+	height: 600px;
+	width: 1200px;
+	margin: 100px auto 0 auto;
+}
+
+	#locations h2 {
+		width: 100%;
+		margin-top: 2em;
+		text-align: center;
+	}
+
+.banner-locations {
+	display: flex;
+	flex-direction: row;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.textbox-locations {
+	background-color: black;
+	width: 300px;
+	height: 300px;
+	opacity: 0.8;
+	text-align: center;
+	display: inline-block;
+	margin: 15px 20px;
+	position: relative;
+	bottom: 15px;
+}
+
+	.textbox-locations p {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+
+
+/* ----- Contact ----- */
+#contact {
+	margin: 60px 0 0 0;
+}
+
+.textbox-contact {
+	overflow: hidden;
+	text-align: center;
+	height: 200px;
+	width: 100%;
+}
+
+
+/* ----- Footer ----- */
+footer p {
+	font-size: 16px;
+	margin-left: 20px;
+}
+
+
+/* ---- Responsive ----*/
+@media (max-width: 1199px) {
+	#mission {
+		width: 100%;
+		height: 0;
+		padding: 0 0 66% 0;
+		margin: 70px auto 50px auto;
+	}
+
+	#locations {
+		width: 100%;
+		height: auto;
+		min-height: 600px;
+		margin: 100px auto 0 auto;
+	}
+}
+
+@media (max-width: 849px) {
+	nav {		
+		width: 100%;
+		position: absolute;
+		top: 70px;
+		left: 0;
+	}
+
+	nav li {
+		display: block;
+		margin-top: 10px;
+	}
+
+	#menu-icon {
+		display: block;
+		background-image: url('menu_icon_white.png');
+		background-size: 70px 70px;
+	}
+
+		#menu-icon.open {
+			display: block;
+			background-image: url('close_big_white.png');
+			background-size: 40px 40px;
+		}
+}

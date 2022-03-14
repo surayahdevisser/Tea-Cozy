@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!--Meta data-->
+		<title>The Tea Cozy</title>
+		<meta name="Keywords" content="Tea Cozy, Tea Cozy Portland, Tea Health Benefits">
+		<meta name="Description" content="Tea Cozy Homepage">
+		<!--Toevoeging voor responsiveness-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--Resources-->
+		<link rel="stylesheet" href="index.css" type="text/css" />
+		<script type="text/javascript" src="index.js"></script>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+	</head>
+
+	<body>
+		<!--Header-->
+		<header>
+			<div class="logo-container">
+				<img alt="Tea Cozy logo" src="https://content.codecademy.com/courses/freelance-1/unit-4/img-tea-cozy-logo.png" class="logo">
+			</div>
+				<nav id="nav">
+					<ul>
+						<li><a href="#mission">Mission</a></li>
+						<li><a href="#health-benefits">Health Benefits</a></li>
+						<li><a href="#tea-of-the-month">Featured Tea</a></li>
+						<li><a href="#locations">Locations</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			<div id="menu-icon" onclick="toggleMenu()"></div>
+		</header>
+
+		<!--Banner-->
+		<main>
+			<section id="mission">
+				<div class="textbox-banner">
+					<h1>Tea Cozy</h1>
+					<h2>Our Mission</h2>
+					<p>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</p>
+				</div>
+			</section>
+
+			<!--Health Benefits section-->
+			<section id="health-benefits">
+				<div class="textbox-health-benefits">
+					<h2>Health Benefits</h2>
+					<p>The health benefits of drinking tea are many; it can boost your energy, aids in digestion and might help with weight loss. But the most well known health benefit of drinking tea is probably stress relief. Studies have shown that drinking a 100 ml of green tea a day might even prevent depression!</p>
+					<p>Of course, to prevent stress, a proper mindset is important too. To help you with that, we have developed this quote generator with quotes from inspirational figures. Check it out, and get your quote to practice some mindfulness!</p>
+					<h3 id="inspirational-quote"></h3>
+					<button id="quote-button" onclick="shuffleQuote()">Get Quote</button>
+				</div>
+			</section>
+
+			<!--Tea of the Month section-->
+			<section id="tea-of-the-month">
+				<div class="textbox">
+					<h2>Tea of the Month</h2>
+					<p>What's Steeping at The Tea Cozy?</p>
+				</div>
+				<div class="Picturebook">
+					<figure>
+						<img alt="Fall Berry Blitz Tea" src="https://content.codecademy.com/courses/freelance-1/unit-4/img-berryblitz.jpg">
+						<figcaption>Fall Berry Blitz Tea</figcaption>
+					</figure>
+					<figure>
+						<img alt="Spiced Rum Tea" src="https://content.codecademy.com/courses/freelance-1/unit-4/img-spiced-rum.jpg">
+						<figcaption>Spiced Rum Tea</figcaption>
+					</figure>
+					<figure>
+						<img alt="Seasonal Donuts" src="https://content.codecademy.com/courses/freelance-1/unit-4/img-donut.jpg">
+						<figcaption>Seasonal Donuts</figcaption>
+					</figure>
+				</div>
+				<div class="Picturebook">
+					<figure>
+						<img alt="Myrtle Ave Tea" src="https://content.codecademy.com/courses/freelance-1/unit-4/img-myrtle-ave.jpg">
+						<figcaption>Myrtle Ave Tea</figcaption>
+					</figure>
+					<figure>
+						<img alt="Bedford Bizarre Tea" src="https://content.codecademy.com/courses/freelance-1/unit-4/img-bedford-bizarre.jpg">
+						<figcaption>Bedford Bizarre Tea</figcaption>
+					</figure>
+				</div>
+			</section>
+
+			<!--Locations section-->
+			<section id="locations">
+				<div class="banner-locations">
+					<h2>Locations</h2>
+					<div class="textbox-locations">
+						<h3>Downtown</h3>
+						<p>384 West 4th St</p>
+						<p>Suite 108</p>
+						<p>Portland, Maine</p>
+					</div>
+					<div class="textbox-locations">
+						<h3>East Bayside</h3>
+						<p>3433 Phisherman's Avenue</p>
+						<p>(Northwest Corner)</p>
+						<p>Portland, Maine</p>
+					</div>
+					<div class="textbox-locations">
+						<h3>Oakdale</h3>
+						<p>515 Crecent Avenue</p>
+						<p>Second Floor</p>
+						<p>Portland, Maine</p>
+					</div>
+				</div>
+			</section>
+
+			<!--Contact section-->
+			<section id="contact">
+				<div class="textbox-contact">
+					<h2>The Tea Cozy</h2>
+					<p><a href="mailto:contact@theteacozy.com">contact@theteacozy.com</a></p>
+					<p>917-555-8904</p>
+				</div>
+			</section>
+		</main>
+
+		<!--Footer-->
+		<footer>
+			<p>copyright The Tea Cozy <span id="year"></span></p>
+		</footer>
+	</body>
+</html>
